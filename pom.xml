@@ -59,9 +59,9 @@
       <dependency>
           <groupId>com.oracle</groupId>
           <artifactId>javafx</artifactId>
-          <version>2.2</version>
+          <version>${java.version}</version>
           <scope>system</scope>
-                <systemPath>${java.home}/lib/jfxrt.jar</systemPath>
+          <systemPath>C:/Program Files/Java/jdk1.7.0_72/jre/lib/jfxrt.jar</systemPath>
       </dependency>
   </dependencies>
   <properties>

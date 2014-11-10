@@ -222,7 +222,7 @@ public class VocabController {
         raf.init((List<LearnItem>) learnItemTable.getItems());
 
         startPaneController.setGreeting(String.format(
-                "%d neue Vokabeln zu �ben", raf.getCount(RepeatAndForget.NEW)));
+                "%d neue Vokabeln zu üben", raf.getCount(RepeatAndForget.NEW)));
     }
 
     @FXML
