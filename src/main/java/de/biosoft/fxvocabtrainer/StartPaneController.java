@@ -19,7 +19,7 @@ public class StartPaneController {
         newVocabProp.set(greet);
     }
 
-    // lblVocab.setText(String.format("%d neue Vokabeln zu üben",
+    // lblVocab.setText(String.format("%d neue Vokabeln zu ï¿½ben",
     // raf.getCount(RepeatAndForget.NEW)));
 
 }
