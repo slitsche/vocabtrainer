@@ -18,50 +18,50 @@
         </configuration>
       </plugin>
       <plugin>
-		  <artifactId>maven-assembly-plugin</artifactId>
-		  <version>2.5</version>
-		  <configuration>
-		    <descriptors>
-		      <descriptor>src/assembly/jar_assembly.xml</descriptor>
-		    </descriptors>
-		    <!-- @see <a href="http://loop81.blogspot.de/2012/03/javafx-2-get-started-with-maven-eclipse.html" class="elf-external elf-icon" rel="nofollow">http://loop81.blogspot.de/2012/03/javafx-2-get-started-with-maven-eclips...</a> -->
-		    <archive>
-		      <manifest>
-		        <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
-		        <addClasspath>true</addClasspath>
-		      </manifest>
-		      <manifestEntries>
-		        <JavaFX-Version>2.2</JavaFX-Version>
-		        <JavaFX-Application-Class>de.biosoft.fxvocabtrainer.VocabTrainerApp</JavaFX-Application-Class>
-		        <Main-Class>com/javafx/main/Main</Main-Class>
-		      </manifestEntries>
-		    </archive>
-		  </configuration>
-		  <executions>
-		    <execution>
-		      <phase>package</phase>
-		      <goals>
-		        <goal>single</goal>
-		      </goals>
-		    </execution>
-		  </executions>
-		</plugin>
+          <artifactId>maven-assembly-plugin</artifactId>
+          <version>2.5</version>
+          <configuration>
+            <descriptors>
+              <descriptor>src/assembly/jar_assembly.xml</descriptor>
+            </descriptors>
+            <!-- @see <a href="http://loop81.blogspot.de/2012/03/javafx-2-get-started-with-maven-eclipse.html" class="elf-external elf-icon" rel="nofollow">http://loop81.blogspot.de/2012/03/javafx-2-get-started-with-maven-eclips...</a> -->
+            <archive>
+              <manifest>
+                <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+                <addClasspath>true</addClasspath>
+              </manifest>
+              <manifestEntries>
+                <JavaFX-Version>2.2</JavaFX-Version>
+                <JavaFX-Application-Class>de.biosoft.fxvocabtrainer.VocabTrainerApp</JavaFX-Application-Class>
+                <Main-Class>com/javafx/main/Main</Main-Class>
+              </manifestEntries>
+            </archive>
+          </configuration>
+          <executions>
+            <execution>
+              <phase>package</phase>
+              <goals>
+                <goal>single</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
     </plugins>
   </build>
 
   <dependencies>
-  	<dependency>
-  		<groupId>junit</groupId>
-  		<artifactId>junit</artifactId>
-  		<version>4.11</version>
-  		<scope>test</scope>
-  	</dependency>
-  	<dependency>
-  		<groupId>com.oracle</groupId>
-  		<artifactId>javafx</artifactId>
-  		<version>2.2</version>
-  		<scope>system</scope>
-  		<systemPath>C:/Program Files/Java/jdk1.7.0_72/jre/lib/jfxrt.jar</systemPath>
-  	</dependency>
+      <dependency>
+          <groupId>junit</groupId>
+          <artifactId>junit</artifactId>
+          <version>4.11</version>
+          <scope>test</scope>
+      </dependency>
+      <dependency>
+          <groupId>com.oracle</groupId>
+          <artifactId>javafx</artifactId>
+          <version>2.2</version>
+          <scope>system</scope>
+                <systemPath>${java.home}/lib/jfxrt.jar</systemPath>
+      </dependency>
   </dependencies>
 </project>
